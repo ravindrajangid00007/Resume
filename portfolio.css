@@ -1,0 +1,41 @@
+#portfoilo{
+    height: auto;
+    width: 100%;
+}
+
+.section-heading{
+    color: blue;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.projects{
+    height: auto;
+    width: 70vw;
+    font-size: 100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects div{
+    padding: 75px 75px 0px 75px;
+}
+.projects div i{
+    padding: 10px;
+    border-radius: 1rem;
+}
+.projects div i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+    border: 2px solid grey;
+    
+}
+.green-bg{
+    color: rgba(38, 110, 38, 0.678);
+}
+.red-bg{
+    color: rgba(145, 48, 48, 0.897);
+}
