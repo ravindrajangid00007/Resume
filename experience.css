@@ -1,0 +1,85 @@
+#experience{
+    height: auto;
+    width: 100%;
+}
+.education-div{
+    height: auto;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    position: relative;
+    
+    
+}
+
+.education-div div{
+    text-align: left;
+}
+
+.education-div div h2{
+    color: blue;
+    font: 40px Arial, Geneva, Helvetica, sans-serif;
+    margin-bottom: -6px;
+}
+
+.education-div div h3{
+    color: orange;
+    padding: -10px 0px;
+}
+.education-div div h4{
+    color: black;
+    padding: -10px 0px;
+}
+
+.edu1{
+    height: auto;
+    min-height: 150px;
+    max-height: 300px;
+    width: 300px;
+    background-color: transparent;
+}
+
+
+.edu2{
+    height: auto;
+    width: 300px;
+    min-height: 150px;
+    max-height: 300px;
+    align-self: flex-end;
+    background-color: transparent;
+}
+
+.edu3{
+    height: auto;
+    width: 300px;
+    min-height: 150px;
+    max-height: 300px;
+    background-color: transparent;
+}
+
+
+.middle{
+    position: absolute;
+    width: 10px;
+    top: 15%;
+    left: 50%;
+    border: 2px dashed #0096fa6b;
+    height: 70%;
+    color: #433E3F;
+
+}
+.aeroplane{
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+.aeroplane i{
+    font-size: 1.5rem;
+    transform: rotate(90deg);
+  	margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+
