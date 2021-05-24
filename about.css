@@ -7,6 +7,8 @@
     width: 12rem;
     margin: auto;
     margin-top: -100px;
+    position: relative ;
+    z-index: 20 ;
 }
 
 .profile-image img{
@@ -14,7 +16,7 @@
     height: 100%;
     width: 100%;
     border: 3px solid white;
-    box-shadow: 1px 1px 10px 2px lightsalmon;
+    box-shadow: 1px 1px 10px 2px rgb(65, 155, 197);
 }
 
 .about-para{
