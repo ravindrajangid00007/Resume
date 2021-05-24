@@ -2,32 +2,99 @@ body{
     margin: 0px;
 }
 
+
+/* main heading */
+.heading{
+    height: 65px; ;
+    width: 100%;
+    background-color: blue ;
+    display: flex ;
+    justify-content: space-between ;
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+/* home and logo */
+#home{
+    display: inline-block;
+    align-self: center ;
+}
+#home a{
+    text-decoration: none ;
+    color: white ;
+}
+#home a i{
+    font-weight: 800;
+    font-size: 1.5rem;
+    vertical-align: middle;
+    border-style: none;
+    padding: 15px;
+}
+/* navigation menu */
+.nav-menu{
+    display: inline-block ;
+    align-self: center;
+}
+
+.horizontal-list{
+    list-style: none ;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding-left: 20px ;
+    padding-right:20px;
+}
+
+.horizontal-list li a{
+    text-decoration: none;
+    color: white ;
+    transition: all 2s;
+}
+.horizontal-list li a:hover{
+    color: red;
+}
+
 .main-body-header {
     height: 80vh;
     width: 100%;
+    position: relative ;
     background-image: url(images/715624af3fe5286.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
-}
-/*
-.nav-list{
-    color: aliceblue;
-    margin-left: 10px;
+    background-size: 100vw 100%;
+    top: 10px;
 }
 
-.nav-list li{
-    display: inline-block;
-    padding: 10px;
-    font-size: x-large;
+.name-social-container{
+    
 }
-.nav-list li a{
-    color: orange;
-    text-decoration: none;
+
+.text-center{
+    text-align: center;
 }
-.nav-list li a:hover{
-    color: red;
-    transition: color 1s;
+
+#my-name{
+    font-size: 5rem;
+    font-weight: 700 ;
+    padding-top: 25vh;
+    color: white ;
 }
+
+.social-icons li a i{
+    padding: 1vh;
+    font-size: 1.5rem;
+    border-radius: 50%;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(7, 40, 129, 0.3);
+/*
 .main-name{
     font-size: xxx-large;
     color: white;
@@ -44,7 +111,7 @@ body{
 
 /* Body Header */
 
-.horizontal-list{
+/* .horizontal-list{
     list-style: none;
     padding-left: 0px;
     margin: 0px;
@@ -64,14 +131,12 @@ body{
     border-bottom: 2px solid grey;
     transition: border-bottom 2s;
     
-}
+} */
 
-.name-social-container{
+/* .name-social-container{
     margin: 10vw;
 }
-.text-center{
-    text-align: center;
-}
+
 
 #my-name{
     color: orange;
@@ -87,4 +152,4 @@ body{
 }
 .social-icons li a i:hover{
     box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
-}
+} */
