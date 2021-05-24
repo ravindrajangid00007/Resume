@@ -28,49 +28,39 @@
     font-weight: 200;
     color: aqua;
 }
+
 .red{
     background-color: red;
     text-align: center;
 }
-.eighty-percent{
-    height: inherit;
-    width: 80%;
-}
+
 
 .blue{
     background-color: blue;
     text-align: center;
 }
-.seventy-percent{
-    height: inherit;
-    width: 70%;
-}
 
 
-.yello{
+.yellow{
     background-color: yellow;
     text-align: center;
 }
-.ten-percent{
-    height: inherit;
-    width: 10%;
-}
+
 
 .green-black{
     background-color: green;
     text-align: center;
 }
 
-.twenty-percent{
-    height: inherit;
-    width: 20%;
-}
+
 
 .orange{
     background-color: orange;
     text-align: center;
 }
-.sixty-percent{
-    height: inherit;
-    width: 60%;
+
+.block2{
+    height: inherit ;
+    width: 0%;
+    transition: all 2s ;
 }
