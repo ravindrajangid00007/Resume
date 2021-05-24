@@ -1,7 +1,6 @@
 #skills{
     height: auto;
     width: 100%;
-    padding: 30px;
     background-image: linear-gradient(cyan ,blue);
     
 }
@@ -11,17 +10,19 @@
     width: 70vw;
     margin: auto;
 }
-
+.displayflex{
+    display: flex ;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+}
 .block{
-    display: inline-block;
     height: 1.5rem;
     width: 100px;
     background-color: gray;
-    vertical-align: middle;
     border: 1px solid grey;
     border-radius: 15px;
     overflow:hidden ;
-    margin: 30px 0px 30px 110px;
+    margin: 50px ;
 }
 .skill-name{
     font-size: 1.2rem;

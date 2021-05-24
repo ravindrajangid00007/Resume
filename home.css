@@ -72,9 +72,7 @@ body{
     top: 10px;
 }
 
-.name-social-container{
-    
-}
+
 
 .text-center{
     text-align: center;
@@ -94,62 +92,4 @@ body{
 }
 .social-icons li a i:hover{
     box-shadow: 0px 0px 6px 4px rgba(7, 40, 129, 0.3);
-/*
-.main-name{
-    font-size: xxx-large;
-    color: white;
-    text-align: center;
-    padding-top: 10vw;
-}
 
-.main-name:hover{
-    color: rgb(195, 0, 255);
-    transition: color 3s;
-}
-
-/*social icon*/
-
-/* Body Header */
-
-/* .horizontal-list{
-    list-style: none;
-    padding-left: 0px;
-    margin: 0px;
-}
-
-.horizontal-list li{
-    display: inline-block;
-    margin: 0px 8px 8px 0px;
-    font-weight: 100;
-    font-size: 1.2rem;
-}
-.horizontal-list li a{
-    color: white;
-    text-decoration: none;
-}
-.nav-menu li a:hover{
-    border-bottom: 2px solid grey;
-    transition: border-bottom 2s;
-    
-} */
-
-/* .name-social-container{
-    margin: 10vw;
-}
-
-
-#my-name{
-    color: orange;
-    font-size: 4rem;
-    font-weight: 200;
-    font-style: oblique;
-}
-
-.social-icons li a i{
-    padding: 10px;
-    font-size: 1.2rem;
-    border-radius: 50%;
-}
-.social-icons li a i:hover{
-    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
-} */
