@@ -1,41 +1,83 @@
-#portfoilo{
+#portfolio{
     height: auto;
     width: 100%;
-}
-
-.section-heading{
-    color: blue;
-    font-size: 2rem;
-    padding: 20px;
-    text-align: center;
-    margin-top: 40px;
+    /* background-color: #c449c2; */
+    padding-bottom: 20px;
 }
 
 .projects{
     height: auto;
-    width: 70vw;
-    font-size: 100px;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-content: space-around;
+}
+.back{
+    height: 250px;
+    width: 450px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    margin-bottom: 40px;
+    /* border: 2px solid gray; */
 }
 
-.projects div{
-    padding: 75px 75px 0px 75px;
+.under{
+    /* position: relative; */
+    height: inherit;
+    width: inherit;
+    background-image: linear-gradient(blue,cyan);
+    color: #fff; 
+    border-radius: 5px;
+    border: none;
+    display: inline-block ;
 }
-.projects div i{
-    padding: 10px;
-    border-radius: 1rem;
+.upper{
+    height: inherit ;
+    width: inherit ;
+    background-image: url("images/238.jpg");
+    background-repeat: no-repeat;
+    background-size: 450px 250px;
+    border-radius: 5px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 1s ease-in-out;
 }
-.projects div i:hover{
-    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
-    border: 2px solid grey;
-    
+.content{
+    height: 250px;
+    width: 375px ;
+    margin-left: 75px;
+    /* background-color: yellow; */
 }
-.green-bg{
-    color: rgba(38, 110, 38, 0.678);
+.main-para{
+    height: 150px;
+    width: 375px ;
+    font-size: 1.5rem;
+    text-align: left;
 }
-.red-bg{
-    color: rgba(145, 48, 48, 0.897);
+.placed{
+    height: 50px;
+    width: 375px;
+    margin: 5px 0px;
+}
+.placed button{
+    background-color: transparent; 
+    border: 2px solid gray;
+    border-radius: 10px;
+    color: red;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 800;
+    margin-left: 5%;
+  }
+
+.placed button:hover {
+    background: white;
+    color: #13386fe0;
 }

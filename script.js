@@ -73,3 +73,28 @@
         }
     }, 1000);
 }
+
+
+// project-BhxBrowser
+
+var back = document.getElementsByClassName("back");
+for (var i = 0; i < back.length; i++) {
+    back[i].addEventListener("mouseenter", function () {
+        this.children[1].style.top = "50px";
+        this.children[1].style.left = "-75px";
+        this.children[1].style.height = "150px";
+        this.children[1].style.width = "150px";
+        this.children[1].style.backgroundSize = "150px 150px";
+    });
+}
+
+for (var j = 0; j < back.length ; j++) {
+    back[j].addEventListener("mouseleave", function () {
+        this.children[1].style.top = "0px";
+        this.children[1].style.left = "0px";
+        this.children[1].style.height = "250px";
+        this.children[1].style.width = "450px";
+        this.children[1].style.backgroundSize = "450px 250px";
+
+    });
+}
