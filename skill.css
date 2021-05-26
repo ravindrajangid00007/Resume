@@ -63,5 +63,5 @@
 .block2{
     height: inherit ;
     width: 0%;
-    transition: all 2s ;
+    /* transition: all 2s ; */
 }
