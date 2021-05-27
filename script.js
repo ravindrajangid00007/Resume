@@ -20,15 +20,15 @@
             }
         });
     }
-    var contactSection = document.getElementById('contact') ;
-    anchors[anchors.length-1].addEventListener('click' ,function(){
-        var contactID = setInterval(function(){
-            if(contactSection.getBoundingClientRect().top <= window.innerHeight-300 ){
-                clearInterval(contactID) ;
-                return ;
+    var contactSection = document.getElementById('contact');
+    anchors[anchors.length - 1].addEventListener('click', function () {
+        var contactID = setInterval(function () {
+            if (contactSection.getBoundingClientRect().top <= window.innerHeight - 300) {
+                clearInterval(contactID);
+                return;
             }
-            window.scrollBy(0, 50) ;
-        },1);
+            window.scrollBy(0, 50);
+        }, 1);
     });
 
 
@@ -88,19 +88,32 @@
 var back = document.getElementsByClassName("back");
 
 for (var i = 0; i < back.length; i++) {
+
     back[i].addEventListener("mouseenter", function () {
-        this.children[1].style.top = "50px";
-        this.children[1].style.left = "-75px";
-        this.children[1].style.height = "150px";
-        this.children[1].style.width = "150px";
-        this.children[1].style.backgroundSize = "150px 150px";
+        if (window.innerWidth > 650) {
+            this.children[1].style.top = "50px";
+            this.children[1].style.left = "-75px";
+            this.children[1].style.height = "150px";
+            this.children[1].style.width = "150px";
+            this.children[1].style.backgroundSize = "150px 150px";
+        } else {
+            this.children[1].style.transform = "rotateY(90deg)";
+        }
     });
     back[i].addEventListener("mouseleave", function () {
-        this.children[1].style.top = "0px";
-        this.children[1].style.left = "0px";
-        this.children[1].style.height = "250px";
-        this.children[1].style.width = "450px";
-        this.children[1].style.backgroundSize = "450px 250px";
+        if (window.innerWidth > 650) {
+            this.children[1].style.top = "0px";
+            this.children[1].style.left = "0px";
+            this.children[1].style.height = "250px";
+            this.children[1].style.width = "450px";
+            this.children[1].style.backgroundSize = "450px 250px";
+        } else {
+            
+            this.children[1].style.transform = "rotateY(0deg)";
+        }
+
 
     });
 }
+
+
