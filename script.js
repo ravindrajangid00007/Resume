@@ -97,7 +97,9 @@ for (var i = 0; i < back.length; i++) {
             this.children[1].style.width = "150px";
             this.children[1].style.backgroundSize = "150px 150px";
         } else {
-            this.children[1].style.transform = "rotateY(90deg)";
+            // this.children[1].style.transform = "rotateY(90deg)";
+            this.children[1].style.width = "0px";
+            this.children[1].style.backgroundSize = "0px 250px";
         }
     });
     back[i].addEventListener("mouseleave", function () {
@@ -109,7 +111,9 @@ for (var i = 0; i < back.length; i++) {
             this.children[1].style.backgroundSize = "450px 250px";
         } else {
             
-            this.children[1].style.transform = "rotateY(0deg)";
+            // this.children[1].style.transform = "rotateY(0deg)";
+            this.children[1].style.backgroundSize = "450px 250px";
+            this.children[1].style.width = "450px";
         }
 
 
