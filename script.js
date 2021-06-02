@@ -1,45 +1,45 @@
 'use strict'
 {
 
-    let anchors = document.querySelectorAll('.nav-menu a');
-    let id;
-    for (let anchor of anchors) {
-        anchor.addEventListener('click', function (event) {
-            event.preventDefault();
-        }
-        );
-    }
-    for (let i = 0; i < anchors.length - 1; i++) {
-        anchors[i].addEventListener('click', function () {
-            let sl = this.attributes[0].textContent.length;
-            let targetSectionID = this.attributes[0].textContent.slice(1, sl,);
-            let targetSection = document.getElementById(targetSectionID);
-            if (targetSection) {
+    // let anchors = document.querySelectorAll('.nav-menu a');
+    // let id;
+    // for (let anchor of anchors) {
+    //     anchor.addEventListener('click', function (event) {
+    //         event.preventDefault();
+    //     }
+    //     );
+    // }
+    // for (let i = 0; i < anchors.length - 1; i++) {
+    //     anchors[i].addEventListener('click', function () {
+    //         let sl = this.attributes[0].textContent.length;
+    //         let targetSectionID = this.attributes[0].textContent.slice(1, sl,);
+    //         let targetSection = document.getElementById(targetSectionID);
+    //         if (targetSection) {
 
-                id = setInterval(scrollVertically, 1, targetSection);
-            }
-        });
-    }
-    var contactSection = document.getElementById('contact');
-    anchors[anchors.length - 1].addEventListener('click', function () {
-        var contactID = setInterval(function () {
-            if (contactSection.getBoundingClientRect().top <= window.innerHeight - 300) {
-                clearInterval(contactID);
-                return;
-            }
-            window.scrollBy(0, 50);
-        }, 1);
-    });
+    //             id = setInterval(scrollVertically, 1, targetSection);
+    //         }
+    //     });
+    // }
+    // var contactSection = document.getElementById('contact');
+    // anchors[anchors.length - 1].addEventListener('click', function () {
+    //     var contactID = setInterval(function () {
+    //         if (contactSection.getBoundingClientRect().top <= window.innerHeight - 300) {
+    //             clearInterval(contactID);
+    //             return;
+    //         }
+    //         window.scrollBy(0, 50);
+    //     }, 1);
+    // });
 
 
-    function scrollVertically(targetSection) {
-        let targetDestination = targetSection.getBoundingClientRect().top;
-        if (targetDestination <= 50) {
-            clearInterval(id);
-            return;
-        }
-        window.scrollBy(0, 50);
-    }
+    // function scrollVertically(targetSection) {
+    //     let targetDestination = targetSection.getBoundingClientRect().top;
+    //     if (targetDestination <= 50) {
+    //         clearInterval(id);
+    //         return;
+    //     }
+    //     window.scrollBy(0, 50);
+    // }
 
 
 

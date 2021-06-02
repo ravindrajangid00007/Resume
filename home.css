@@ -2,10 +2,13 @@ body{
     margin: 0px;
 }
 
-
+.fixed{
+    width: 100%;
+    height: 80px;
+}
 /* main heading */
 .heading{
-    height: 65px; ;
+    height: 80px; ;
     width: 100%;
     background-color: blue ;
     display: flex ;
@@ -21,75 +24,107 @@ body{
 }
 /* home and logo */
 #home{
-    display: inline-block;
-    align-self: center ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #home a{
     text-decoration: none ;
     color: white ;
 }
-#home a i{
+.fa-home{
     font-weight: 800;
     font-size: 1.5rem;
-    vertical-align: middle;
-    border-style: none;
-    padding: 15px;
+    padding-left: 15px;
 }
 /* navigation menu */
 .nav-menu{
-    display: inline-block ;
-    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: 80%;
 }
 
-.horizontal-list{
+.nav-menu-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     list-style: none ;
+    height: inherit;
+    width: inherit;
 }
 
-.horizontal-list li{
-    display: inline-block;
+.nav-menu-list-items{
+    
     font-weight: 500;
     font-size: 1.5rem;
-    padding-left: 20px ;
-    padding-right:20px;
 }
 
-.horizontal-list li a{
+.nav-menu-list-items a{
     text-decoration: none;
     color: white ;
     transition: all 2s;
 }
-.horizontal-list li a:hover{
+.nav-menu-list-items a:hover{
     color: red;
 }
 
+/* main body container */
 .main-body-header {
-    height: 80vh;
-    width: 100%;
-    position: relative ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url(images/90653.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100%;
-    top: 10px;
+    /* top: 10px; */
 }
-
-
-
-.text-center{
-    text-align: center;
+.name-social-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 #my-name{
     font-size: 5rem;
     font-weight: 700 ;
-    padding-top: 25vh;
+    /* padding-top: 25vh; */
     color: white ;
+    text-align: center;
+}
+.social-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto 200px ;
 }
 
-.social-icons li a i{
+.social-icon-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    color: white;
+
+}
+
+.social-icon-list-items a{
+    color: white;
+}
+
+.fab{
+    font-size: 2rem;
+}
+
+/* .social-icons li a i{
     padding: 1vh;
     font-size: 1.5rem;
     border-radius: 50%;
-}
-.social-icons li a i:hover{
+}*/
+.fab:hover{
     box-shadow: 0px 0px 6px 4px rgba(7, 40, 129, 0.3);
 
+} 
