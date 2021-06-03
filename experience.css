@@ -4,10 +4,10 @@
 }
 .experience-div{
     height: auto;
-    width: 70vw;
+    width: 100%;
     margin: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     background-color: transparent;
     position: relative;
 }
@@ -19,24 +19,26 @@
 
 .experience-div div h2{
     color: blue;
-    padding: -10px 0px ;
+    /* padding: -10px 0px ; */
 }
 
 .experience-div div h3{
     color: orange;
-    padding: -10px 0px;
+    /* padding: -10px 0px; */
 }
 .experience-div div h4{
     color: gray;
-    padding: -10px 0px;
+    /* padding: -10px 0px; */
 }
 
 .job1{
     height: 300px;
     width: 300px;
     background-color: transparent;
-    /* display: inline-block; */
-    margin: 60px 0px 0px 60px ;
+     position: relative;
+     top: 0px;
+     left: 150px;
+     
 }
 
 .job2{
@@ -44,16 +46,18 @@
     width: 300px;
     align-self: flex-end;
     background-color: transparent;
-    /* display: inline-block */
-    margin: 0px 60px 0px 0px ;
+    position: relative;
+    top: 0px ;
+    right: 150px;
 }
 
 .job3{
     height: 300px;
     width: 300px;
     background-color: transparent;
-    /* display: inline-block; */
-    margin: 0px 0px 0px 60px ;
+    position: relative;
+    top: 0px ;
+    left: 150px;
 }
 
 .job4{
@@ -67,12 +71,11 @@
 
 .middle{
     position: absolute;
-    width: 10px;
-    top: 15%;
-    left: 50%;
-    border: 2px dashed #0096fa6b;
-    height: 70%;
-    color: #433E3F;
+width: 0px;
+top: 15%;
+left: 50%;
+border: 2px dashed black;
+height: 70%;
 
 }
 .car{
@@ -81,9 +84,177 @@
     z-index: 2;
 }
 .car i{
-    font-size: 1.5rem;
+    font-size: 2rem;
     transform: rotate(90deg);
   	margin-top: -35px;
     display: block;
-    color: #2857a4;
+    color: blueviolet;
+}
+
+
+@media screen and (max-width: 1100px){
+    .job1{
+        left: 120px ;
+    }
+    
+    
+    .job2{
+        right: 120px;
+    }
+    
+    .job3{
+        left: 120px;
+    }
+}
+
+
+
+@media screen and (max-width: 950px){
+    .job1{
+        left: 80px ;
+    }
+    
+    
+    .job2{
+        right: 80px;
+    }
+    
+    .job3{
+        left: 80px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .job1{
+        left: 60px ;
+    }
+    
+    
+    .job2{
+        right:60px;
+    }
+    
+    .job3{
+        left: 60px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+.experience-div{
+        height: auto;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: transparent;
+        position: relative;
+        
+        
+    }
+    
+    .experience-div div{
+        text-align: left;
+    }
+    
+    .experience-div div h2{
+        color: blue;
+        font: 40px Arial, Geneva, Helvetica, sans-serif;
+        margin-bottom: -6px;
+    }
+    
+    .experience-div div h3{
+        color: orange;
+        padding: -10px 0px;
+    }
+    .experience-div div h4{
+        color: black;
+        padding: -10px 0px;
+    }
+    
+    .job1{
+        height: auto;
+        width: 300px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        top: 0px;
+        left: 120px ;
+    }
+    
+    
+    .job2{
+        height: auto;
+        width: 300px;
+        align-self: flex-start;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        top: 0px;
+        left: 120px;
+    }
+    
+    .job3{
+        height: auto;
+        width: 300px;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        top: 0px;
+        left: 120px;
+    }
+    
+
+    .car{
+        position: sticky;
+        top: 135px;
+        z-index: 2;
+    }
+    .car i{
+        font-size: 2rem;
+        transform: rotate(90deg);
+          margin-top: -35px;
+        display: block;
+        color: purple;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .middle{
+        display: none;
+    }
+    .experience-div{
+        height: auto;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        
+    }
+    .job1{
+       
+        width: 300px;
+        left: 0px ;
+    }
+    
+    
+    .job2{
+        width: 300px;
+        top: 0px;
+        left: 0px;
+        align-self: unset;
+    }
+    
+    .job3{
+        width: 300px;
+        left: 0px;
+    }
 }
