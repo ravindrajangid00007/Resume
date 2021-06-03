@@ -75,7 +75,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(images/90653.jpg);
+    background-image: url(images/hexagonal-technology-pattern-mesh-background-with-text-space_1017-26293.jpg);
     background-repeat: no-repeat;
     background-size: 100vw 100%;
     /* top: 10px; */
@@ -92,6 +92,7 @@ body{
     /* padding-top: 25vh; */
     color: white ;
     text-align: center;
+    margin: 100px auto 50px;
 }
 .social-icons{
     display: flex;

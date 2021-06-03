@@ -1,16 +1,24 @@
 #skills{
     height: auto;
-    width: 100%;
-    background-image: linear-gradient(cyan ,blue);
+    width: 80%;
+    background: #a8ff78;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin: auto ;
+border-radius: 10px ;
+
     
 }
 
 .skill-section{
     height: auto;
-    width: 70vw;
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
 }
-.displayflex{
+.skill-section-container{
     display: flex ;
     justify-content: space-around ;
     flex-wrap: wrap;
@@ -22,12 +30,19 @@
     border: 1px solid grey;
     border-radius: 15px;
     overflow:hidden ;
-    margin: 50px ;
+    margin: 40px ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
 }
 .skill-name{
     font-size: 1.2rem;
-    font-weight: 200;
-    color: aqua;
+    font-weight: 600;
+    color: black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .red{
@@ -64,4 +79,13 @@
     height: inherit ;
     width: 0%;
     /* transition: all 2s ; */
+}
+
+
+.red__gradient{
+    background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
