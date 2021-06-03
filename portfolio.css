@@ -122,17 +122,89 @@
     color: red;
     padding: 5px 10px;
 }
-/* @media screen and (max-width: 600px){
-    .upper{
-        height: inherit ;
-        width: 75px ;
-        background-image: url("images/238.jpg");
-        background-repeat: no-repeat;
-        background-size: 75px 250px;
-        border-radius: 5px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        transition: all 1s ease-in-out;
+
+
+
+@media screen and (max-width: 550px){
+
+    .back{
+        height: 400px;
+        width: 350px;
+        background-color: transparent;
+        border-radius: 0px;
+        position: relative;
+        margin: 30px 50px ;
+        /* border: 2px solid gray; */
     }
-} */
+    
+    .under
+    {
+        /* position: relative; */
+        height: 200px;
+        width: inherit;
+        background-image: linear-gradient(blue,cyan);
+        color: #fff; 
+        border-radius: 0px;
+        border: none;
+        display: inline-block ;
+    }
+    .upper{
+            height: 200px ;
+            width: inherit ;
+            border-radius: 0px;
+            position: static;
+            top: 0px;
+            left: 0px;
+            border: 2px solid black;
+            box-sizing: border-box;
+    }
+        
+
+
+
+    .games{
+        background-size: 350px 200px;
+    }
+    
+    .resume__project{
+        background-size: 350px 200px;
+    }
+    
+    .gym__website{
+        background-size: 350px 200px;
+    }
+    
+    .calculator{
+        background-size: 350px 200px;
+    }
+    .content{
+        height: 200px;
+        width: 350px ;
+        margin-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: yellow; */
+    }
+    .main-para{
+        height: 150px;
+        width: 350px ;
+        font-size: 1.5rem;
+        text-align: left;
+    }
+    .placed{
+        height: 40px;
+        width: 350px ;
+    }
+    
+    .button__link{
+        display: inline-block ;
+        height: inherit;
+        width: inherit;
+        text-decoration: none;
+        color: red;
+        padding: 5px 10px;
+    }
+        
+}
