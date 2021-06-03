@@ -90,48 +90,33 @@ var back = document.getElementsByClassName("back");
 for (var i = 0; i < back.length; i++) {
 
     back[i].addEventListener("mouseenter", function () {
-        if (window.innerWidth >= 900) {
-            this.children[1].style.top = "50px";
-            this.children[1].style.left = "-75px";
-            this.children[1].style.height = "150px";
-            this.children[1].style.width = "150px";
-            this.children[1].style.backgroundSize = "150px 150px";
+        if (window.innerWidth >= 550) {
+            this.children[0].style.top = "40px";
+                this.children[0].style.left = "-60px";
+                this.children[0].style.height = "120px";
+                this.children[0].style.width = "120px";
+                this.children[0].style.backgroundSize = "120px 120px";
         } else {
-
-            if (window.innerWidth > 610) {
-                this.children[1].style.top = "40px";
-                this.children[1].style.left = "-60px";
-                this.children[1].style.height = "120px";
-                this.children[1].style.width = "120px";
-                this.children[1].style.backgroundSize = "120px 120px";
-            } else {
-                // this.children[1].style.transform = "rotateY(90deg)";
-                this.children[1].style.width = "0px";
-                this.children[1].style.backgroundSize = "0px 200px";
-            }
+                // // this.children[1].style.transform = "rotateY(90deg)";
+                // this.children[1].style.width = "0px";
+                // this.children[1].style.backgroundSize = "0px 200px";
+            
         }
 
     });
     back[i].addEventListener("mouseleave", function () {
-        if (window.innerWidth >= 900) {
-            this.children[1].style.top = "0px";
-            this.children[1].style.left = "0px";
-            this.children[1].style.height = "250px";
-            this.children[1].style.width = "450px";
-            this.children[1].style.backgroundSize = "450px 250px";
+        if (window.innerWidth >= 550) {
+            this.children[0].style.top = "0px";
+                this.children[0].style.left = "0px";
+                this.children[0].style.height = "200px";
+                this.children[0].style.width = "400px";
+                this.children[0].style.backgroundSize = "400px 200px";
         } else {
-            if (window.innerWidth > 610){
-                this.children[1].style.top = "0px";
-                this.children[1].style.left = "0px";
-                this.children[1].style.height = "200px";
-                this.children[1].style.width = "400px";
-                this.children[1].style.backgroundSize = "400px 200px";
-            } else {
     
-                // this.children[1].style.transform = "rotateY(0deg)";
-                this.children[1].style.backgroundSize = "400px 200px";
-                this.children[1].style.width = "400px";
-            }
+                // // this.children[1].style.transform = "rotateY(0deg)";
+                // this.children[1].style.backgroundSize = "400px 200px";
+                // this.children[1].style.width = "400px";
+            
         }
         
 
@@ -140,22 +125,6 @@ for (var i = 0; i < back.length; i++) {
 }
 
 
-window.addEventListener('scroll', function () {
-    for (let obj of back) {
-        if (window.innerWidth >= 900) {
-            obj.children[1].style.top = "0px";
-            obj.children[1].style.left = "0px";
-            obj.children[1].style.height = "250px";
-            obj.children[1].style.width = "450px";
-            obj.children[1].style.backgroundSize = "450px 250px";
-        } else {
-            obj.children[1].style.top = "0px";
-            obj.children[1].style.left = "0px";
-            obj.children[1].style.height = "200px";
-            obj.children[1].style.width = "400px";
-            obj.children[1].style.backgroundSize = "400px 200px";
-        }
-    }
-});
+
 
 

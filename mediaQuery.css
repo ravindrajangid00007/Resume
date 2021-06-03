@@ -1,36 +1,59 @@
 @media screen and (max-width : 900px){
-    .back{
-        height: 200px;
-        width: 400px;
-        background-color: transparent;
-        border-radius: 5px;
-        position: relative;
-        margin-bottom: 40px;
-        /* border: 2px solid gray; */
-    }
     
-    .under{
-        /* position: relative; */
-        height: inherit;
-        width: inherit;
-        background-image: linear-gradient(blue,cyan);
-        color: #fff; 
-        border-radius: 5px;
-        border: none;
-        display: inline-block ;
+    
+}
+
+
+@media screen and (max-width : 700px){
+    #my-name{
+        font-size: 4rem;
+        font-weight: 700 ;
+        /* padding-top: 25vh; */
+        color: white ;
+        text-align: center;
+        margin: 80px auto 40px;
     }
+    .fab{
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 550px){
+
+.back{
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+    margin: 30px 50px ;
+    /* border: 2px solid gray; */
+}
+
+.under{
+    /* position: relative; */
+    height: 200px;
+    width: inherit;
+    background-image: linear-gradient(blue,cyan);
+    color: #fff; 
+    border-radius: 0px;
+    border: none;
+    display: inline-block ;
+}
     .upper{
-        height: inherit ;
+        height: 200px ;
         width: inherit ;
-        border-radius: 5px;
+        border-radius: 0px;
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
+        position: static;
         top: 0px;
         left: 0px;
         transition: all 1s ease-in-out;
         border: 2px solid black;
+        box-sizing: border-box;
     }
     
     .games{
@@ -55,65 +78,5 @@
         background-image: url("images/calculator.png");
         background-repeat: no-repeat;
         background-size: 400px 200px;
-    }
-    .content{
-        height: 200px;
-        width: 340px ;
-        margin-left: 75px;
-        /* background-color: yellow; */
-    }
-    .main-para{
-        height: 150px;
-        width: 340px ;
-        font-size: 1.5rem;
-        text-align: left;
-    }
-    .placed{
-        height: 50px;
-        width: 340px;
-        margin: 5px 0px;
-    }
-    .placed button{
-        background-color: transparent; 
-        border: 2px solid gray;
-        border-radius: 10px;
-        color: red;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 1rem;
-        font-family: sans-serif;
-        font-weight: 800;
-        margin-left: 5%;
-      }
-    
-    .placed button:hover {
-        background: white;
-        color: #13386fe0;
-    }
-    
-    .button__link{
-        display: inline-block ;
-        height: inherit;
-        width: inherit;
-        text-decoration: none;
-        color: red;
-        /* padding: 15px 32px; */
-    }
-    
-}
-
-
-@media screen and (max-width : 700px){
-    #my-name{
-        font-size: 4rem;
-        font-weight: 700 ;
-        /* padding-top: 25vh; */
-        color: white ;
-        text-align: center;
-        margin: 80px auto 40px;
-    }
-    .fab{
-        font-size: 1.5rem;
     }
 }

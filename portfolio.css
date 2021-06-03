@@ -15,12 +15,12 @@
     align-content: space-around;
 }
 .back{
-    height: 250px;
-    width: 450px;
+    height: 200px;
+    width: 400px;
     background-color: transparent;
     border-radius: 5px;
     position: relative;
-    margin-bottom: 40px;
+    margin: 30px 50px;
     /* border: 2px solid gray; */
 }
 
@@ -51,42 +51,49 @@
 .games{
     background-image: url("images/vector-illustration-neon-future-game-260nw-1861318969.jpg");
     background-repeat: no-repeat;
-    background-size: 450px 250px;
+    background-size: 400px 200px;
 }
 
 .resume__project{
     background-image: url("images/download.jfif");
     background-repeat: no-repeat;
-    background-size: 450px 250px;
+    background-size: 400px 200px;
 }
 
 .gym__website{
     background-image: url("images/gym.jfif");
     background-repeat: no-repeat;
-    background-size: 450px 250px;
+    background-size: 400px 200px;
 }
 
 .calculator{
     background-image: url("images/calculator.png");
     background-repeat: no-repeat;
-    background-size: 450px 250px;
+    background-size: 400px 200px;
 }
 .content{
-    height: 250px;
-    width: 375px ;
-    margin-left: 75px;
+    height: 200px;
+    width: 340px ;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     /* background-color: yellow; */
 }
 .main-para{
     height: 150px;
-    width: 375px ;
+    width: 340px ;
     font-size: 1.5rem;
     text-align: left;
 }
 .placed{
-    height: 50px;
-    width: 375px;
+    height: 40px;
+    width: 340px;
     margin: 5px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .placed button{
     background-color: transparent; 
@@ -99,7 +106,7 @@
     font-size: 1rem;
     font-family: sans-serif;
     font-weight: 800;
-    margin-left: 5%;
+    /* margin-left: 5%; */
   }
 
 .placed button:hover {
@@ -113,7 +120,7 @@
     width: inherit;
     text-decoration: none;
     color: red;
-    /* padding: 15px 32px; */
+    padding: 5px 10px;
 }
 /* @media screen and (max-width: 600px){
     .upper{
