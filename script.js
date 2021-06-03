@@ -96,11 +96,6 @@ for (var i = 0; i < back.length; i++) {
             this.children[0].style.height = "120px";
             this.children[0].style.width = "120px";
             this.children[0].style.backgroundSize = "120px 120px";
-        } else {
-            // // this.children[1].style.transform = "rotateY(90deg)";
-            // this.children[1].style.width = "0px";
-            // this.children[1].style.backgroundSize = "0px 200px";
-
         }
 
     });
@@ -111,12 +106,6 @@ for (var i = 0; i < back.length; i++) {
             this.children[0].style.height = "200px";
             this.children[0].style.width = "400px";
             this.children[0].style.backgroundSize = "400px 200px";
-        } else {
-
-            // // this.children[1].style.transform = "rotateY(0deg)";
-            // this.children[1].style.backgroundSize = "400px 200px";
-            // this.children[1].style.width = "400px";
-
         }
 
 
@@ -124,18 +113,13 @@ for (var i = 0; i < back.length; i++) {
     });
 }
 
-setInterval(function () {
-    if (window.innerWidth < 550) {
-        for (var obj of back) {
-            
-            obj.children[0].style.height = "200px";
-            obj.children[0].style.width = "350px";
-            obj.children[0].style.backgroundSize = "350px 200px";
-        }
-    }
-}, 500);
 
 
-
+var hamBurger = document.querySelector('.mobile-menu') ;
+var navList = document.querySelector('.nav-menu-list') ;
+function activeContainer(){
+    navList.classList.toggle('active');
+}
+hamBurger.addEventListener('click' , activeContainer)
 
 
