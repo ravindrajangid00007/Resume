@@ -142,9 +142,11 @@ function src() {
         portfolioPage.classList.add('highlight');
         educationPage.classList.remove('highlight');
         contactPage.classList.remove('highlight') ;
-    } else {
+    } else if(window.innerWidth > 1050 && pos < 4250){
         contactPage.classList.add('highlight');
         portfolioPage.classList.remove('highlight') ;
+    }else{
+        contactPage.classList.remove('highlight');
     }
 }
 
