@@ -105,7 +105,7 @@ var navList = document.querySelector('.nav-menu-list') ;
 function activeContainer(){
     navList.classList.toggle('active');
 }
-hamBurger.addEventListener('click' , activeContainer)
+hamBurger.addEventListener('click' , activeContainer) ;
 
 
 // highlight border
@@ -124,27 +124,27 @@ function src() {
     if (window.innerWidth > 1050 && pos < 306) {
         aboutPage.classList.remove('highlight');
     } else if (window.innerWidth > 1050 && pos < 745) {
-        aboutPage.classList.add('highlight');
         skillPage.classList.remove('highlight');
+        aboutPage.classList.add('highlight');
     } else if (window.innerWidth > 1050 && pos < 1459) {
-        skillPage.classList.add('highlight');
         aboutPage.classList.remove('highlight');
         experiencePage.classList.remove('highlight') ;
+        skillPage.classList.add('highlight');
     } else if (window.innerWidth > 1050 && pos < 2581){
-        experiencePage.classList.add('highlight') ;
         skillPage.classList.remove('highlight');
         educationPage.classList.remove('highlight');
+        experiencePage.classList.add('highlight') ;
     } else if (window.innerWidth > 1050 && pos < 3499){
-        educationPage.classList.add('highlight');
         experiencePage.classList.remove('highlight') ;
         portfolioPage.classList.remove('highlight');
+        educationPage.classList.add('highlight');
     } else if (window.innerWidth > 1050 && pos < 4159){
-        portfolioPage.classList.add('highlight');
         educationPage.classList.remove('highlight');
         contactPage.classList.remove('highlight') ;
+        portfolioPage.classList.add('highlight');
     } else if(window.innerWidth > 1050 && pos < 4300){
-        contactPage.classList.add('highlight');
         portfolioPage.classList.remove('highlight') ;
+        contactPage.classList.add('highlight');
     }else{
         contactPage.classList.remove('highlight');
     }
@@ -152,4 +152,14 @@ function src() {
 
 
 setInterval(src, 10);
-window.addEventListener('click', src);
+// window.addEventListener('click', src);
+
+
+
+
+aboutPage.addEventListener('click' , activeContainer) ;
+skillPage.addEventListener('click' , activeContainer) ;
+experiencePage.addEventListener('click' , activeContainer) ;
+educationPage.addEventListener('click' , activeContainer) ;
+portfolioPage.addEventListener('click' , activeContainer) ;
+contactPage.addEventListener('click' , activeContainer) ;
